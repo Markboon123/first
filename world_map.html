@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bde93088a1e7f0980e52526cb7daea2e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bde93088a1e7f0980e52526cb7daea2e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bde93088a1e7f0980e52526cb7daea2e = L.map(
+                "map_bde93088a1e7f0980e52526cb7daea2e",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a3fb3bfa8912c12cbaa7e373c62d4ce = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_6a3fb3bfa8912c12cbaa7e373c62d4ce.addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var marker_2023faf94050676a88d7212bf75b5116 = L.marker(
+                [35.8617, 104.1954],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_810ed65cd034e73c700bd829b988e606 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2023faf94050676a88d7212bf75b5116.setIcon(icon_810ed65cd034e73c700bd829b988e606);
+        
+    
+            marker_2023faf94050676a88d7212bf75b5116.bindTooltip(
+                `<div>
+                     China<br>Rank: 1<br>Population: 1,402,112,000
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8cad6d80e0bf6d5a93065dcd23172092 = L.marker(
+                [20.5937, 78.9629],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_82a11008038ba5934e55d4f4a6890c4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8cad6d80e0bf6d5a93065dcd23172092.setIcon(icon_82a11008038ba5934e55d4f4a6890c4f);
+        
+    
+            marker_8cad6d80e0bf6d5a93065dcd23172092.bindTooltip(
+                `<div>
+                     India<br>Rank: 2<br>Population: 1,366,417,754
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7609ef8cfc52c7cb1faa3162949ec5a9 = L.marker(
+                [37.0902, -95.7129],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_8f94a231527524d23eb48684143134d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7609ef8cfc52c7cb1faa3162949ec5a9.setIcon(icon_8f94a231527524d23eb48684143134d2);
+        
+    
+            marker_7609ef8cfc52c7cb1faa3162949ec5a9.bindTooltip(
+                `<div>
+                     United States<br>Rank: 3<br>Population: 331,449,281
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a1c0870d35f39ebfdbdb9817bd1899c0 = L.marker(
+                [-0.7893, 113.9213],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_d4f0108c2957b1f52a4aaa554eda0045 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a1c0870d35f39ebfdbdb9817bd1899c0.setIcon(icon_d4f0108c2957b1f52a4aaa554eda0045);
+        
+    
+            marker_a1c0870d35f39ebfdbdb9817bd1899c0.bindTooltip(
+                `<div>
+                     Indonesia<br>Rank: 4<br>Population: 270,203,917
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a90f5407621600b2624d7c1a1eac128f = L.marker(
+                [30.3753, 69.3451],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_16276c4be099d5e275cba1e7ad462d6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a90f5407621600b2624d7c1a1eac128f.setIcon(icon_16276c4be099d5e275cba1e7ad462d6e);
+        
+    
+            marker_a90f5407621600b2624d7c1a1eac128f.bindTooltip(
+                `<div>
+                     Pakistan<br>Rank: 5<br>Population: 216,565,318
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_89b1e28d1614752da184411ca948fab2 = L.marker(
+                [-14.235, -51.9253],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_ad8e034b4e2a3298f32d4a3f8ce1f1e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_89b1e28d1614752da184411ca948fab2.setIcon(icon_ad8e034b4e2a3298f32d4a3f8ce1f1e9);
+        
+    
+            marker_89b1e28d1614752da184411ca948fab2.bindTooltip(
+                `<div>
+                     Brazil<br>Rank: 6<br>Population: 211,049,527
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77c2247733c32146a6869f1ad5295c20 = L.marker(
+                [9.082, 8.6753],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_f4304a9fe85c0f5f1be9ff6b53183f51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_77c2247733c32146a6869f1ad5295c20.setIcon(icon_f4304a9fe85c0f5f1be9ff6b53183f51);
+        
+    
+            marker_77c2247733c32146a6869f1ad5295c20.bindTooltip(
+                `<div>
+                     Nigeria<br>Rank: 7<br>Population: 200,963,599
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8bb19a9ae746eb486e1aebc9f5a53658 = L.marker(
+                [23.685, 90.3563],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_de783d4e3c2ef655ea568f982efd0d40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8bb19a9ae746eb486e1aebc9f5a53658.setIcon(icon_de783d4e3c2ef655ea568f982efd0d40);
+        
+    
+            marker_8bb19a9ae746eb486e1aebc9f5a53658.bindTooltip(
+                `<div>
+                     Bangladesh<br>Rank: 8<br>Population: 163,046,161
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_420deab34d5dc9b101b9a4e109a10bbe = L.marker(
+                [61.524, 105.3188],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_93131babfdd2bd64092a983f2747d479 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_420deab34d5dc9b101b9a4e109a10bbe.setIcon(icon_93131babfdd2bd64092a983f2747d479);
+        
+    
+            marker_420deab34d5dc9b101b9a4e109a10bbe.bindTooltip(
+                `<div>
+                     Russia<br>Rank: 9<br>Population: 145,872,256
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ceff578f5aa53e81ffa0cc518d1375c2 = L.marker(
+                [23.6345, -102.5528],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_6a52a358b60ab392a6a17fa9d496e585 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ceff578f5aa53e81ffa0cc518d1375c2.setIcon(icon_6a52a358b60ab392a6a17fa9d496e585);
+        
+    
+            marker_ceff578f5aa53e81ffa0cc518d1375c2.bindTooltip(
+                `<div>
+                     Mexico<br>Rank: 10<br>Population: 127,575,529
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_58436f98fd2562019203248786629ba8 = L.marker(
+                [36.2048, 138.2529],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_0ec0a03b708b1ef75551c3fb8b6c44fe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_58436f98fd2562019203248786629ba8.setIcon(icon_0ec0a03b708b1ef75551c3fb8b6c44fe);
+        
+    
+            marker_58436f98fd2562019203248786629ba8.bindTooltip(
+                `<div>
+                     Japan<br>Rank: 11<br>Population: 126,860,301
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bcbc45ce9861914e2b9b4eabbd32578c = L.marker(
+                [9.145, 40.4897],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_8f06b032e5749f5d4153c2a5794dfd41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bcbc45ce9861914e2b9b4eabbd32578c.setIcon(icon_8f06b032e5749f5d4153c2a5794dfd41);
+        
+    
+            marker_bcbc45ce9861914e2b9b4eabbd32578c.bindTooltip(
+                `<div>
+                     Ethiopia<br>Rank: 12<br>Population: 112,078,730
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad5fe8d62bb8e7528b468aad9b08d979 = L.marker(
+                [12.8797, 121.774],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_05bea0d279928d07aa1a7d9f09cf6450 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ad5fe8d62bb8e7528b468aad9b08d979.setIcon(icon_05bea0d279928d07aa1a7d9f09cf6450);
+        
+    
+            marker_ad5fe8d62bb8e7528b468aad9b08d979.bindTooltip(
+                `<div>
+                     Philippines<br>Rank: 13<br>Population: 108,116,615
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b09d5445f899ce047b66cfbcdbe64f8c = L.marker(
+                [26.8206, 30.8025],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_7d5f0a5b33541b194047af2fb1e23bac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b09d5445f899ce047b66cfbcdbe64f8c.setIcon(icon_7d5f0a5b33541b194047af2fb1e23bac);
+        
+    
+            marker_b09d5445f899ce047b66cfbcdbe64f8c.bindTooltip(
+                `<div>
+                     Egypt<br>Rank: 14<br>Population: 100,388,073
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fd6a7928c6f4de236ecc039a1e91cbbb = L.marker(
+                [14.0583, 108.2772],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_41a909a58ec21c7cd257f0f89bf3dab4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fd6a7928c6f4de236ecc039a1e91cbbb.setIcon(icon_41a909a58ec21c7cd257f0f89bf3dab4);
+        
+    
+            marker_fd6a7928c6f4de236ecc039a1e91cbbb.bindTooltip(
+                `<div>
+                     Vietnam<br>Rank: 15<br>Population: 96,462,106
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77208a3b2ed6835b38fc9ac2b6cfef4f = L.marker(
+                [-4.0383, 21.7587],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_29afb1a049331a31212acc29bccb35ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_77208a3b2ed6835b38fc9ac2b6cfef4f.setIcon(icon_29afb1a049331a31212acc29bccb35ea);
+        
+    
+            marker_77208a3b2ed6835b38fc9ac2b6cfef4f.bindTooltip(
+                `<div>
+                     DR Congo<br>Rank: 16<br>Population: 86,790,567
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7a54ce25498d903523658d056d2d0cde = L.marker(
+                [38.9637, 35.2433],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_feafb82346c7c310078cae8dfa279e33 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7a54ce25498d903523658d056d2d0cde.setIcon(icon_feafb82346c7c310078cae8dfa279e33);
+        
+    
+            marker_7a54ce25498d903523658d056d2d0cde.bindTooltip(
+                `<div>
+                     Turkey<br>Rank: 17<br>Population: 83,429,615
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_404e6e2d13e61eafd392f23d845f8581 = L.marker(
+                [32.4279, 53.688],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_c094aeb7a7855aeba0ce47a78b748158 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_404e6e2d13e61eafd392f23d845f8581.setIcon(icon_c094aeb7a7855aeba0ce47a78b748158);
+        
+    
+            marker_404e6e2d13e61eafd392f23d845f8581.bindTooltip(
+                `<div>
+                     Iran<br>Rank: 18<br>Population: 82,913,906
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a33b22cde54cb1385f99673ab39f9ad = L.marker(
+                [51.1657, 10.4515],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_91b7501b1e5863480d6c817c242c0a5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3a33b22cde54cb1385f99673ab39f9ad.setIcon(icon_91b7501b1e5863480d6c817c242c0a5d);
+        
+    
+            marker_3a33b22cde54cb1385f99673ab39f9ad.bindTooltip(
+                `<div>
+                     Germany<br>Rank: 19<br>Population: 83,149,300
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ce472e3b718b7f8779eeffe60f447dfb = L.marker(
+                [15.87, 100.9925],
+                {
+}
+            ).addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+    
+            var icon_9503a12bab900ca4ddaf13f143314b93 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ce472e3b718b7f8779eeffe60f447dfb.setIcon(icon_9503a12bab900ca4ddaf13f143314b93);
+        
+    
+            marker_ce472e3b718b7f8779eeffe60f447dfb.bindTooltip(
+                `<div>
+                     Thailand<br>Rank: 20<br>Population: 69,799,978
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_6a3fb3bfa8912c12cbaa7e373c62d4ce.addTo(map_bde93088a1e7f0980e52526cb7daea2e);
+        
+</script>
+</html>
